@@ -7,7 +7,7 @@ namespace GuessingGame
     {
         private static void Main()
         {
-            WriteLine("Welcome to Guess a Word Program (0-100) with in 7 attempts.");
+            WriteLine("Welcome to Guess a Number Program (1-100) with in 7 attempts.");
             var rand = new Random();
             var secretNumber = rand.Next(1, 101);
             const int maxTries = 7;
