@@ -3,6 +3,7 @@ using static System.Console;
 
 namespace GuessingGame
 {
+    //When an invalid number is inputed, your logic always consider it a '0'.
     internal static class GuessingGame
     {
         private static void Main()
@@ -16,6 +17,7 @@ namespace GuessingGame
 
             for (var i = 1; i <= maxTries; i++)
             {
+                //C# 6 feature (string interpolation) - nice.
                 Write($"ATTEMPT {i} : Enter your number: ");
                 int userInput;
                 int.TryParse(ReadLine(), out userInput);
